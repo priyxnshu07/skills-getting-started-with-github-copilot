@@ -15,6 +15,26 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+        
+        <!-- Search and Filter Controls -->
+        <div class="controls">
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search activities..." />
+            <button id="clear-search" class="clear-btn">✕</button>
+          </div>
+          
+          <div class="filter-container">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+              <option value="all">All Categories</option>
+              <option value="Academic">Academic</option>
+              <option value="Sports">Sports</option>
+              <option value="Arts">Arts</option>
+              <option value="Club">Club</option>
+            </select>
+          </div>
+        </div>
+        
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
@@ -38,6 +58,14 @@
           <button type="submit">Sign Up</button>
         </form>
         <div id="message" class="hidden"></div>
+      </section>
+
+      <!-- Student Dashboard -->
+      <section id="dashboard-container">
+        <h3>My Activities</h3>
+        <div id="enrolled-activities">
+          <p>No activities enrolled yet. Sign up for some activities above!</p>
+        </div>
       </section>
     </main>
 
